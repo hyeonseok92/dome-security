@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Security login page",
+  "name": "It controls the security of the dome system.",
   "icons": [
     {
       "src": "favicon.ico",

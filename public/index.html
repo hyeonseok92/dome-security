@@ -25,19 +25,59 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>React App</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="index.css" rel="stylesheet">
   </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+  <body class="login-page sidebar-collapse">
+    <div class="page-header">
+      <div class="page-header-image" style="background-image:url('%PUBLIC_URL%/background1.jpg')"></div>
+      <div class="content">
+        <div class="container">
+          <div class="col-md-4 ml-auto mr-auto">
+            <div class="card card-login card-plain">
+              <form class="form" method="" action="">
+                <div class="card-header text-center">
+                  사용자 이름과 암호를 입력하십시오.
+                </div>
+                <div class="card-body">
+                  <div class="input-group no-border input-lg">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="now-ui-icons users_circle-08"></i>
+                      </span>
+                    </div>
+                    <input type="text" name="username" class="form-control" placeholder="사용자명">
+                  </div>
+                  <div class="input-group no-border input-lg">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">
+                        <i class="now-ui-icons text_caps-small"></i>
+                      </span>
+                    </div>
+                    <input type="text" placeholder="보안해제 비밀번호." name="password" class="form-control" />
+                  </div>
+                </div>
+                <div class="card-footer text-center">
+                  <button type="submit" class="btn btn-primary btn-round btn-lg btn-block">보안 해제</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="copyright" id="copyright">
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+          <p>인류 최후의 돔 보안시스템</p>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <!--   Core JS Files   -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="form.js"></script>
   </body>
 </html>

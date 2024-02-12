@@ -1,12 +1,12 @@
-import logo from './logo.svg';
+import background from './background1.jpg';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <div className="Root">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
+	      <input type="text" name="name"/>
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <a
